@@ -1,0 +1,20 @@
+# 테이블 생성
+
+-- kdn_pv.tbl_weather_forecast definition
+
+CREATE TABLE `tbl_weather_forecast` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `local` text DEFAULT NULL,
+  `time` datetime DEFAULT NULL,
+  `today_power` double DEFAULT NULL,
+  `today_power_sum` double DEFAULT NULL,
+  `today_solar` double DEFAULT NULL,
+  `today_temper` double DEFAULT NULL,
+  `today_wind` double DEFAULT NULL,
+  `tomorrow_power` double DEFAULT NULL,
+  `tomorrow_power_sum` double DEFAULT NULL,
+  `tomorrow_solar` double DEFAULT NULL,
+  `tomorrow_temper` double DEFAULT NULL,
+  `tomorrow_wind` double DEFAULT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
